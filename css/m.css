@@ -30,11 +30,43 @@ input[type=radio]{
 }
 
 form{
-	background-color:aliceblue;padding:1%
+	background-color:aliceblue;
+    padding:1%;
+    border-style: outset;
+    border-radius: 5px;
 }
 
-#banner img{
-    width: 20%;
+.inputCheckBox {
+    margin-left: 0px; 
+}
+
+.inputRadioButton{
+    margin-left: 0px;
+}
+#myform{
+    text-align: center;
+}
+
+#myform div{
+    text-align: left;
+}
+
+/******************************************************************************/
+/*HEADER*/
+/******************************************************************************/
+#Header{
+    top: 0px;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#Header img{
+    width: 100%;
+}
+
+#Header p{
+    text-align: center;
 }
 
 /******************************************************************************/

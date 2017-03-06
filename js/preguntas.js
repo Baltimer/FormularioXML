@@ -122,8 +122,9 @@ function gestionarXml(dadesXml){
 				break;
 		}
 	}
-	imprimirEspacios(3);
+	imprimirEspacios(2);
 	imprimirBotonCorregir();
+	imprimirEspacios(2);
 }
  
 //**********************************************************************************************
@@ -168,6 +169,7 @@ function imprimirCheckBox(i, xmlDoc) {
 		input.type="checkbox";
 		input.name="preg"+i;
 		input.id="preg"+i+"ans"+j;
+		input.setAttribute("class", "inputCheckBox");
 		document.getElementById('pregunta'+i).appendChild(input);
 		document.getElementById('pregunta'+i).appendChild(label);
 		document.getElementById('pregunta'+i).appendChild(document.createElement("br"));
@@ -185,6 +187,7 @@ function imprimirRadioButton(i, xmlDoc) {
 		input.type="radio";
 		input.name="preg"+i;
 		input.id="preg"+i+"ans"+j;
+		input.setAttribute("class", "inputRadioButton");
 		document.getElementById('pregunta'+i).appendChild(input);
 		document.getElementById('pregunta'+i).appendChild(span);
 		document.getElementById('pregunta'+i).appendChild(document.createElement("br"));
@@ -216,6 +219,7 @@ function imprimirBotonCorregir() {
 	var botonCorregir = document.createElement("input");
 	botonCorregir.type = "submit";
 	botonCorregir.value = "Corregir";
+	botonCorregir.id="btnCorregir";
 	formContainer.appendChild(botonCorregir);
 }
 

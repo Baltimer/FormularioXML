@@ -18,8 +18,10 @@ h3{
 }
 
 input,select{
-	width:50%
+	width:50%;
+	margin-left: 25%;
 }
+
 
 input[type=radio]{
 	width: 5%;zoom:1.5;
@@ -29,11 +31,23 @@ input[type=checkbox]{
 	width:5%;zoom:1.5
 }
 
-form{
-	background-color:aliceblue;
+.inputCheckBox {
+	margin-left: 0px; 
+}
+
+.inputRadioButton{
+	margin-left: 0px;
+}
+
+#myform{
+    text-align: center;
+    background-color:aliceblue;
 	padding:3%;
 }
 
+#myform div{
+    text-align: left;
+}
 
 #Banner img {
 	width: 20%;
