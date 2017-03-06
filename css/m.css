@@ -1,24 +1,25 @@
 body,html{
-	margin:0px
+	margin:0px;
 }
 
 body{
     background-image: url("../img/patronFondo.png");
 	width:94%;
 	padding-left:3%;
-	padding-right:3%
+	padding-right:3%;
 }
 
 body,input,select,label{
-	font-size:5vw
+	font-size:5vw;
 }
 
 h3{
-	font-size:7vw
+	font-size:7vw;
 }
 
 input,select{
-	width:80%
+	width:70%;
+    margin-left: 15%;
 }
 
 input[type=checkbox]{
@@ -36,6 +37,10 @@ form{
     border-radius: 5px;
 }
 
+form select{
+    border-style: outset;
+    border-radius: 10px;
+}
 .inputCheckBox {
     margin-left: 0px; 
 }
@@ -43,12 +48,10 @@ form{
 .inputRadioButton{
     margin-left: 0px;
 }
-#myform{
-    text-align: center;
-}
 
-#myform div{
-    text-align: left;
+#btnCorregir{
+    width: 40% !important;
+    margin-left: 30%;
 }
 
 /******************************************************************************/
@@ -56,9 +59,6 @@ form{
 /******************************************************************************/
 #Header{
     top: 0px;
-    width: 94%;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 #Header img{

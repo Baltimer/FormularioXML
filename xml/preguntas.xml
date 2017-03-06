@@ -78,12 +78,12 @@
 		<option>África</option>
 		<option>Asia</option>
 		<option>Europa</option>
-		<option>Ninguna de las anteriores es correcta.</option>
+		<option>Ninguna de las anteriores.</option>
 		<answer>3</answer>
 	</question>
 	<question id="mlag_010">
 		<type>select multiple</type>
-		<title>Divide 30 por 0.5 y súmale 10. ¿Cuál es el resultado?</title>
+		<title>Divide 30 entre 0.5 y súmale 10. ¿Cuál es el resultado?</title>
 		<option>70</option>
 		<option>25</option>
 		<option>405/10</option>
