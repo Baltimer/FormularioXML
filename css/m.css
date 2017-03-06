@@ -3,9 +3,10 @@ body,html{
 }
 
 body{
-	width:96%;
-	padding-left:2%;
-	padding-right:2%
+    background-image: url("../img/patronFondo.png");
+	width:94%;
+	padding-left:3%;
+	padding-right:3%
 }
 
 body,input,select,label{
@@ -30,6 +31,10 @@ input[type=radio]{
 
 form{
 	background-color:aliceblue;padding:1%
+}
+
+#banner img{
+    width: 20%;
 }
 
 /******************************************************************************/

@@ -3,17 +3,18 @@ body,html{
 }
 
 body{
+	background-image: url("../img/patronFondo.png");
 	width:70%;
 	padding-left:15%;
 	padding-right:15%
 }
 
 body,input,select,label{
-	font-size:2vw
+	font-size:2vw;
 }
 
 h3{
-	font-size:3vw
+	font-size:3vw;
 }
 
 input,select{
@@ -30,11 +31,11 @@ input[type=checkbox]{
 
 form{
 	background-color:aliceblue;
-	padding:3%
+	padding:3%;
 }
 
 
-#headBanner img {
+#Banner img {
 	width: 20%;
 }
 

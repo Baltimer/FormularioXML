@@ -49,6 +49,8 @@ window.onload = function(){
 	formContainer.onsubmit=function(){
 		inicializar();
 		if (comprobar()){
+			document.getElementById("myform").style.display="none";
+			document.getElementById("menu").focus();
 			corregirSelect();
 			corregirText();
 			corregirCheckBox();
