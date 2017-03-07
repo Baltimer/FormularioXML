@@ -9,62 +9,14 @@ body{
 	padding-right:3%;
 }
 
-body,input,select,label{
-	font-size:5vw;
+#contenido{
+    background-color:aliceblue;
+    padding:3%;
 }
 
-h3{
-	font-size:7vw;
-}
-
-input,select{
-	width:70%;
-    margin-left: 15%;
-}
-
-input[type=checkbox]{
-	width:5%;zoom:1.5
-}
-
-input[type=radio]{
-	width: 5%;zoom:1.5;
-}
-
-#myform{
-	background-color:aliceblue;
-    padding:1%;
-}
-
-#myform select{
-    border-style: outset;
-    border-radius: 10px;
-}
-
-
-#btnCorregir{
-    width: 40% !important;
-    margin-left: 30%;
-    border-radius: 5px;
-}
-
-#resultadosDiv{
-    background-image: url("../img/fondoRespuesta.png");
-    color: white;
-    display: none;
-}
-
-#resultadosDiv div{
-    border-style: solid none;
-    border-color: snow; 
-    border-radius: 5px;
-}
-
-#nota{
+#contenido h3{
     text-align: center;
-    text-decoration: underline;
-    font-size: 7vw;
 }
-
 /******************************************************************************/
 /*HEADER*/
 /******************************************************************************/
@@ -78,6 +30,10 @@ input[type=radio]{
 
 #Header p{
     text-align: center;
+}
+
+#Header p{
+    font-size: 5vw;
 }
 
 /******************************************************************************/

@@ -99,6 +99,7 @@ input[type=checkbox]{
 /******************************************************************************/
 /* Remove margins and padding from the list, and add a black background color */
 #menu {
+	font-size: 1vw;
     list-style-type: none;
     margin: 0;
     padding: 0;
