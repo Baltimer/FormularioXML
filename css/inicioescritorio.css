@@ -26,6 +26,7 @@ body{
 	margin: 1%;
 }
 #contenido p{
+	width: 50%;
 	font-size: 2vw;
 	margin-left: 5%;
 	display: inline-block;
@@ -46,6 +47,7 @@ body{
 }
 
 #Header p{
+	width: 70%;
 	font-size: 3vw;
 	margin-left: 5%;
 	display: inline-block;
