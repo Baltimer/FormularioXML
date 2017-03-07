@@ -51,12 +51,12 @@ window.onload = function(){
 		if (comprobar()){
 			document.getElementById("myform").style.display="none";
 			document.getElementById("menu").focus();
-			presentarNota();
 			corregirSelect();
 			corregirText();
 			corregirCheckBox();
 			corregirRadio();
 			corregirSelectMultiple();
+			presentarNota();
 	 	}
 	 	return false;
 	}
@@ -85,6 +85,7 @@ function gestionarXml(dadesXml){
 		switch(tipo) {
 			case "select":
 				crearDivPregunta(i);
+				crearDivCorreccion(i)
 				imprimirTituloPregunta(i, xmlDoc);
 				imprimirOpcionesSelect(i, xmlDoc);
 				preguntasSelect.push(i);
@@ -93,6 +94,7 @@ function gestionarXml(dadesXml){
 				break;
 			case "text":
 				crearDivPregunta(i);
+				crearDivCorreccion(i)
 				imprimirTituloPregunta(i, xmlDoc);
 				imprimirCajaText(numeroCajaTexto, xmlDoc);
 				numeroCajaTexto++;
@@ -101,6 +103,7 @@ function gestionarXml(dadesXml){
 				break;
 			case "checkbox":
 				crearDivPregunta(i);
+				crearDivCorreccion(i)
 				imprimirTituloPregunta(i, xmlDoc);
 				imprimirCheckBox(i, xmlDoc);
 				preguntasCheckBox.push(i);
@@ -108,6 +111,7 @@ function gestionarXml(dadesXml){
 				break;
 			case "radio":
 				crearDivPregunta(i);
+				crearDivCorreccion(i)
 				imprimirTituloPregunta(i, xmlDoc);
 				imprimirRadioButton(i, xmlDoc);
 				preguntasRadio.push(i);
@@ -115,6 +119,7 @@ function gestionarXml(dadesXml){
 				break;
 			case "select multiple":
 				crearDivPregunta(i);
+				crearDivCorreccion(i)
 				imprimirTituloPregunta(i, xmlDoc);
 				imprimirSelectMultiple(i, xmlDoc);
 				preguntasSelectMultiple.push(i);
@@ -381,6 +386,12 @@ function crearDivPregunta(i) {
 	var div = document.createElement('div');
 	div.id = "pregunta"+i;
 	formContainer.appendChild(div);
+}
+
+function crearDivCorreccion(i){
+	var div = document.createElement('div');
+	div.id = "correccion"+i;
+	document.getElementById("resultadosDiv").appendChild(div);
 }
 
 function inicializar(){
