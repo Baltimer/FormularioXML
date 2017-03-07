@@ -41,17 +41,17 @@ form select{
     border-style: outset;
     border-radius: 10px;
 }
-.inputCheckBox {
-    margin-left: 0px; 
-}
 
-.inputRadioButton{
-    margin-left: 0px;
-}
 
 #btnCorregir{
     width: 40% !important;
     margin-left: 30%;
+    border-radius: 5px;
+}
+
+#resultadosDiv{
+    background-image: url("../img/fondoRespuesta.png");
+    color: white;
 }
 
 /******************************************************************************/

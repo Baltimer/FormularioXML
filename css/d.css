@@ -55,6 +55,11 @@ input[type=checkbox]{
 	overflow: hidden;
 }
 
+#resultadosDiv{
+    background-image: url("../img/fondoRespuesta.png");
+    color: white;
+}
+
 /******************************************************************************/
 /* HEADER */
 /******************************************************************************/

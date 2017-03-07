@@ -51,12 +51,12 @@ window.onload = function(){
 		if (comprobar()){
 			document.getElementById("myform").style.display="none";
 			document.getElementById("menu").focus();
+			presentarNota();
 			corregirSelect();
 			corregirText();
 			corregirCheckBox();
 			corregirRadio();
 			corregirSelectMultiple();
-			presentarNota();
 	 	}
 	 	return false;
 	}
@@ -234,11 +234,11 @@ function corregirSelect() {
   	var sel = document.getElementById("pregunta"+preguntasSelect[i]).getElementsByTagName("select")[0];
   	var respuesta = respuestasSelect[i];
   	if (sel.selectedIndex==respuesta) { 
-  		darRespuestaHtml("P" +preguntasSelect[i]+": Correcto");
+  		darRespuestaHtml("P" +(preguntasSelect[i]+1)+": Correcto");
   		nota +=1;
   	}
   	else {
-  		darRespuestaHtml("P" +preguntasSelect[i]+ ": Incorrecto");
+  		darRespuestaHtml("P" +(preguntasSelect[i]+1)+ ": Incorrecto");
   		darRespuestaHtml("La respuesta correcta es: "+valorRespuestaSelect[i]);
   	}
   }
@@ -249,11 +249,11 @@ function corregirText() {
 		var input = document.getElementById("pregunta"+preguntasText[i]).getElementsByTagName("input")[0];
 		var respuesta = respuestasText[i];
 		if (input.value == respuesta){
-			darRespuestaHtml("P" +preguntasText[i]+": Correcto");
+			darRespuestaHtml("P" +(preguntasText[i]+1)+": Correcto");
 			nota += 1;
 		} 
 		else {
-			darRespuestaHtml("P" +preguntasText[i] + ": Incorrecto");
+			darRespuestaHtml("P" +(preguntasText[i]+1) + ": Incorrecto");
 			darRespuestaHtml("La respuesta correcta es: "+respuestasText[i]);
 		}
 	}
@@ -271,7 +271,7 @@ function corregirCheckBox(){
 		  		for (k = 0; k < respuestasCheckBox[i].length; k++){
 		  			if(j == respuestasCheckBox[i][k])	{
 		  				nota += 1.0/respuestasCheckBox[i].length;
-		  				darRespuestaHtml("P"+preguntasCheckBox[i]+" opcion "+j+": correcta");
+		  				darRespuestaHtml("P"+(preguntasCheckBox[i]+1)+" opcion "+(j+1)+": correcta");
 		  				encontrado = true;
 		  				break;
 		  			} 
@@ -279,7 +279,7 @@ function corregirCheckBox(){
 		  		if (!encontrado){
 		  			hayFallo = true;
 		  			nota -= 1.0/respuestasCheckBox[i].length;
-		  			darRespuestaHtml("P"+preguntasCheckBox[i]+" opcion "+j+": incorrecta");
+		  			darRespuestaHtml("P"+(preguntasCheckBox[i]+1)+" opcion "+(j+1)+": incorrecta");
 		  		}
 		  	}	
 	  	}
@@ -291,7 +291,7 @@ function corregirCheckBox(){
 	  		}
 	  	}
 	  	if (bandera == 0){
-			darRespuestaHtml("P"+preguntasCheckBox[i]+": No has seleccionado ninguna respuesta");
+			darRespuestaHtml("P"+(preguntasCheckBox[i]+1)+": No has seleccionado ninguna respuesta");
 		}
 	}
 }
@@ -305,16 +305,16 @@ function corregirRadio() {
 				bandera = 1;
 				if (j == respuestasRadio[i]){
 					nota +=1.0;
-		    		darRespuestaHtml("P"+preguntasRadio[i]+" opcion "+j+": correcta");	
+		    		darRespuestaHtml("P"+(preguntasRadio[i]+1)+" opcion "+(j+1)+": correcta");	
 				} else{
 					nota -= 1.0;
-					darRespuestaHtml("P"+preguntasRadio[i]+" opcion "+j+": incorrecta");
-					darRespuestaHtml("La respuesta correcta es: "+valorRespuestaRadio[i]);
+					darRespuestaHtml("P"+(preguntasRadio[i]+1)+" opcion "+(j+1)+": incorrecta");
+					darRespuestaHtml("La respuesta correcta es: "+ valorRespuestaRadio[i]);
 				}	
 			} 				
 		}
 		if (bandera == 0){
-			darRespuestaHtml("P"+preguntasRadio[i]+": No has seleccionado ninguna respuesta");
+			darRespuestaHtml("P"+(preguntasRadio[i]+1)+": No has seleccionado ninguna respuesta");
 		}
 	}
 }
@@ -331,7 +331,7 @@ function corregirSelectMultiple() {
 		  		for (k = 0; k < respuestasSelectMultiple[i].length; k++){
 		  			if(j == respuestasSelectMultiple[i][k])	{
 		  				nota += 1.0/respuestasSelectMultiple[i].length;
-		  				darRespuestaHtml("P"+preguntasSelectMultiple[i]+" opcion "+j+": correcta");
+		  				darRespuestaHtml("P"+(preguntasSelectMultiple[i]+1)+" opcion "+(j+1)+": correcta");
 		  				encontrado = true;
 		  				break;
 		  			} 
@@ -339,7 +339,7 @@ function corregirSelectMultiple() {
 		  		if (!encontrado){
 		  			hayFallo = true;
 		  			nota -= 1.0/respuestasSelectMultiple[i].length;
-		  			darRespuestaHtml("P"+preguntasSelectMultiple[i]+" opcion "+j+": incorrecta");
+		  			darRespuestaHtml("P"+(preguntasSelectMultiple[i]+1)+" opcion "+(j+1)+": incorrecta");
 		  		}
 		  	}	
 	  	}
@@ -351,7 +351,7 @@ function corregirSelectMultiple() {
 	  		}
 	  	}
 	  	if (bandera == 0){
-			darRespuestaHtml("P"+preguntasSelectMultiple[i]+": No has seleccionado ninguna respuesta");
+			darRespuestaHtml("P"+(preguntasSelectMultiple[i]+1)+": No has seleccionado ninguna respuesta");
 		}
 	}
 }
