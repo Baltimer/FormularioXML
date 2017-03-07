@@ -80,6 +80,7 @@ function gestionarXml(dadesXml){
 	var xmlDoc = dadesXml.responseXML; //Parse XML to xmlDoc
 	var tipo = "";
 	var numeroCajaTexto = 0;
+	divNota();
 	for (i = 0; i<numeroPreguntas; i++) {
 		tipo = xmlDoc.getElementsByTagName("type")[i].innerHTML;
 		switch(tipo) {
@@ -127,7 +128,6 @@ function gestionarXml(dadesXml){
 				break;
 		}
 	}
-	divNota();
 	imprimirEspacios(2);
 	imprimirBotonCorregir();
 	imprimirEspacios(2);
@@ -407,6 +407,11 @@ function presentarNota(){
 	var node = document.createTextNode("Nota: "+nota.toFixed(2)+" puntos sobre 10");
 	p.appendChild(node);
 	document.getElementById("nota").appendChild(p);
+	if (nota < 5.0){
+		document.getElementById("nota").style.color="red";
+	} else{
+		document.getElementById("nota").style.color="green";
+	}
 }
 
 function divNota(){

@@ -40,6 +40,13 @@ input[type=radio]{
     border-radius: 10px;
 }
 
+.inputCheckBox {
+    margin-left: 0px; 
+}
+
+.inputRadioButton{
+    margin-left: 0px;
+}
 
 #btnCorregir{
     width: 40% !important;
@@ -57,6 +64,10 @@ input[type=radio]{
     border-style: solid none;
     border-color: snow; 
     border-radius: 5px;
+}
+
+#resultadosDiv p{
+    padding-left: 1%;   
 }
 
 #nota{

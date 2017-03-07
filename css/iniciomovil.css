@@ -17,6 +17,14 @@ body{
 #contenido h3{
     text-align: center;
 }
+
+#contenido img{
+    width: 100%;
+}
+
+#motivos{
+    margin-left: 15% !important;
+}
 /******************************************************************************/
 /*HEADER*/
 /******************************************************************************/
@@ -45,6 +53,7 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    font-size: 4vw;
 }
 
 #menu li {

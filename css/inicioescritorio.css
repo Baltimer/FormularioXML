@@ -26,11 +26,15 @@ body{
 	margin: 1%;
 }
 #contenido p{
-	width: 50%;
+	width: 51%;
 	font-size: 2vw;
 	margin-left: 5%;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+#motivos{
+	margin-left: 25% !important;
 }
 /******************************************************************************/
 /* HEADER */
@@ -64,7 +68,7 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 #menu li {

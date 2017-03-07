@@ -67,6 +67,10 @@ input[type=checkbox]{
     border-radius: 5px;
 }
 
+#resultadosDiv p{
+	padding-left: 1%;	
+}
+
 #nota{
     text-align: center;
     text-decoration: underline;
@@ -99,7 +103,7 @@ input[type=checkbox]{
 /******************************************************************************/
 /* Remove margins and padding from the list, and add a black background color */
 #menu {
-	font-size: 1vw;
+	font-size: 1.5vw;
     list-style-type: none;
     margin: 0;
     padding: 0;
