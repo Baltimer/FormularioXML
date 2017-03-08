@@ -33,9 +33,10 @@ body{
 	vertical-align: middle;
 }
 
-#motivos{
+.motivos{
 	margin-left: 25% !important;
 }
+
 /******************************************************************************/
 /* HEADER */
 /******************************************************************************/
@@ -57,7 +58,6 @@ body{
 	display: inline-block;
 	vertical-align: middle;
 }
-
 /******************************************************************************/
 /* MENU */
 /******************************************************************************/
@@ -86,4 +86,8 @@ body{
 /* Change the link color to #111 (black) on hover */
 #menu li a:hover {
     background-color: #111;
+}
+
+#menu .selected{
+	background-color: #111;
 }

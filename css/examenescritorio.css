@@ -55,6 +55,11 @@ input[type=checkbox]{
 	overflow: hidden;
 }
 
+#myform div{
+	width: 80%;
+	margin-left: 10%;
+}
+
 #resultadosDiv{
     background-image: url("../img/fondoRespuesta.png");
     color: white;
@@ -62,9 +67,11 @@ input[type=checkbox]{
 }
 
 #resultadosDiv div{
+	width: 80%;
+	margin-left: 10%;
     border-style: solid none;
     border-color: snow; 
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 #resultadosDiv p{
@@ -126,4 +133,8 @@ input[type=checkbox]{
 /* Change the link color to #111 (black) on hover */
 #menu li a:hover {
     background-color: #111;
+}
+
+#menu .selected{
+	background-color: #111;
 }

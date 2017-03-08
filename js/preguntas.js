@@ -408,7 +408,7 @@ function presentarNota(){
 	p.appendChild(node);
 	document.getElementById("nota").appendChild(p);
 	if (nota < 5.0){
-		document.getElementById("nota").style.color="red";
+		document.getElementById("nota").style.color="#333333";
 	} else{
 		document.getElementById("nota").style.color="green";
 	}
