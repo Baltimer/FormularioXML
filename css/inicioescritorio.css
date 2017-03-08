@@ -23,12 +23,12 @@ body{
 	position: relative;
 	vertical-align: middle;
 	width: 30%;
-	margin: 1%;
+	margin-left: 6%;
 }
 #contenido p{
 	width: 51%;
 	font-size: 2vw;
-	margin-left: 5%;
+	margin-left: 6%;
 	display: inline-block;
 	vertical-align: middle;
 }
